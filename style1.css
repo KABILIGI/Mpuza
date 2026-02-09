@@ -1,0 +1,114 @@
+/* Exact Color Match from Image Header */
+:root {
+    --header-blue: #d9e9f2; /* Light cyan/blue background from source 1 */
+    --text-color: #333333;
+    --logo-color: #004182;
+    --notif-red: #e74c3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main-header {
+    background-color: var(--header-blue); /* Corrected background  */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #b0c4de;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--logo-color);
+}
+
+.search-bar {
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    width: 150px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0 10px;
+    font-size: 11px;
+}
+
+.nav-link i {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.icon-stack {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background: var(--notif-red);
+    color: white;
+    font-size: 10px;
+    padding: 1px 4px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.v-line {
+    width: 1px;
+    height: 30px;
+    background: #b0c4de;
+    margin: 0 10px;
+}
+
+.btn-refresher {
+    background: #ffffff;
+    color: #4A90E2;
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid #4A90E2;
+    margin-left: 10px;
+}

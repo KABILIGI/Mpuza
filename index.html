@@ -6,56 +6,58 @@
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-gray-100">
 
-<header class="top-header">
-    <div class="left">
-        <div class="logo">Mpuza</div>
+<header class=" bg-[#e53935] px-5 h-[60px] flex items-center text-white">
+    <div class="flex item-center gap-5">
+        <div class="text-[20px] font-bold ">Mpuza</div>
 
-        <ul class="menu">
-            <li>
-                <i class="fa-solid fa-user-group"></i>
+        <ul class="flex list-none gap-5">
+            <li class="flex item-center gap-2 text-[13px] relative cursor-pointer">
+                <i class="fa-solid fa-user-group text-[14px]"></i>
                 <span>My Network</span>
-                <small class="badge">10+</small>
+                <small class="absolute top-[-6px] right-[-12px] bg-[#2196f3] text-white font-[10px] px-[5px] py-[2px] rounded-[10px]">10+</small>
             </li>
-            <li>
-                <i class="fa-solid fa-book"></i>
+            <li class="flex item-center gap-2 text-[13px] relative cursor-pointer">
+                <i class="fa-solid fa-book text-[14px]"></i>
                 <span>Courses</span>
-                <small class="badge">2</small>
+                <small class="absolute top-[-6px] right-[-12px] bg-[#2196f3] text-white font-[10px] px-[5px] py-[2px] rounded-[10px]">2</small>
             </li>
-            <li>
-                <i class="fa-solid fa-bell"></i>
+            <li class="flex item-center gap-2 text-[13px] relative cursor-pointer">
+                <i class="fa-solid fa-bell text-[14px]"></i>
                 <span>Notifications</span>
-                <small class="badge">7</small>
+                <small class="absolute top-[-6px] right-[-12px] bg-[#2196f3] text-white font-[10px] px-[5px] py-[2px] rounded-[10px]">7</small>
             </li>
-            <li>
-                <i class="fa-solid fa-briefcase"></i>
+            <li class="flex item-center gap-2 text-[13px] relative cursor-pointer">
+                <i class="fa-solid fa-briefcase text-[14px]"></i>
                 <span>Job Alerts</span>
-                <small class="badge">9</small>
+                <small class="absolute top-[-6px] right-[-12px] bg-[#2196f3] text-white font-[10px] px-[5px] py-[2px] rounded-[10px]">9</small>
             </li>
         </ul>
     </div>
 
-    <div class="center">
-        <input type="text" placeholder="Search">
-        <i class="fa-solid fa-magnifying-glass"></i>
+    <div class="flex-1 flex justify-center relative">
+        <input type="text" placeholder="Search" class="w-[420px] h-[32px] border-0 rounded-[20px] px-[40px] pl-[15px] py-0">
+        <i class="fa-solid fa-magnifying-glass absolute right-[calc(50%-200px)] top-[8px] text-[#8888]"></i>
     </div>
 
-    <div class="right">
-        <div class="user">
-            <img src="mbape.jpg" alt="user">
+    <div class="flex items-center gap-5">
+        <div class="flex items-center gap-5 cursor-pointer">
+            <img src="mbape.jpg" alt="user" class="w-[32px] h-[32px] rounded-[50%]">
             <span>Me</span>
             <i class="fa-solid fa-caret-down"></i>
         </div>
 
-        <button class="btn refresher">Become Refresher</button>
-        <button class="btn switch">Switch to</button>
+        <button class="h-[30px] px-0 px-[14px] border-none rounded-[15px] font-[12px] cursor-pointer bg-white text-[#e53935] font-bold">Become Refresher</button>
+        <button class="h-[30px] px-0 px-[14px] border-none rounded-[15px] font-[12px] cursor-pointer bg-transparent text-[#e53935] font-bold">Switch to</button>
     </div>
 </header>
-<div class="ft">
+<div class="flex gap-5">
 
 <aside class="left-sidebar">
     <div class="card profile-card">
